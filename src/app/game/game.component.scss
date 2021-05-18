@@ -1,0 +1,36 @@
+.main-container{
+    .gameboard{
+        display: flex;
+        flex-direction: row;  //row is default value, also reverse-row, coloumn, reverse-coloumn(changing the order of elements)           //[startOfPage]ABCDEFG or GFEDCBA or coloumned                      [endOfPage]
+        justify-content: space-between; //[startOfPage]element1  element2    element3[endOfPage]
+
+        .player-one{
+            p{
+                color: blueviolet;
+            }
+        }
+
+        .player-two{
+            p{
+                color:crimson;
+            }
+        }
+
+        .gamefield{
+            max-width: 300px;
+            .subfield{
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+                border: 1px solid #fff;
+                    &.player-one{
+                        background-color: blueviolet;
+                }
+        
+                    &.player-two{
+                        background-color: crimson;
+                }
+            }
+        }
+    }
+}
